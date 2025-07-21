@@ -44,7 +44,12 @@ This project includes VSCode debugging configuration:
 1. Set breakpoints in your TypeScript files
 2. Press `F5` or go to Run and Debug panel
 3. Select either "Debug TypeScript" or "Debug Compiled JS"
-4. The debugger will use environment variables from your `.env` file
+4. VSCode will prompt you to enter your Azure Speech Service credentials:
+   - **Azure Speech Key**: Your subscription key from Azure Portal
+   - **Azure Region**: Your service region (e.g., eastus, westus2)
+5. The debugger will use these credentials as environment variables during the debug session
+
+**Note**: The debugger will also check for a `.env` file, but the popup prompts take precedence for security and convenience.
 
 ### Project Structure
 
