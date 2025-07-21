@@ -22,7 +22,7 @@ const speechConfig = sdk.SpeechConfig.fromSubscription(
   subscriptionKey,
   serviceRegion
 );
-speechConfig.speechSynthesisVoiceName = 'en-US-JennyNeural'; // Choose any supported voice
+speechConfig.speechSynthesisVoiceName = 'en-US-Steffan:DragonHDLatestNeural'; // Dragon HD Latest Neural voice
 
 const audioConfig = sdk.AudioConfig.fromAudioFileOutput(outputFile);
 const synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
